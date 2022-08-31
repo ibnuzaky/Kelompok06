@@ -1,0 +1,10 @@
+^C:\KELOMPOK06\KELOMPOK06\BUILD\WINDOWS\CMAKEFILES\D2132B509591DDCB783FA5A044B7F254\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
